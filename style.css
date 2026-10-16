@@ -1,0 +1,147 @@
+/* Variáveis de cor: muda aqui e o site inteiro muda */
+:root {
+    --principal: #92eafa;
+    --fundo: #d9fffa;
+    --texto: #507a6c;
+    --borda: #60ffcf;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--fundo);
+    color: var(--texto);
+}
+
+/* Cabeçalho e menu */
+header{
+    background-color: var(--principal);
+    color: #ffff;
+    padding: 14px 24px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px 32px;
+}
+
+header h1 {
+     margin: 0;
+     font-size: 1.3rem;
+}
+
+nav a {
+    color: #d9fffa;
+    margin-right: 16px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Área peincipal */
+main {
+    max-width: 960px;
+    margin: 24px;
+    padding: 0 16px;
+}
+
+h2{
+    margin-top: 0;
+}
+
+a {
+    color: var(--principal);
+}
+
+/* Mensagens */
+.aviso {
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.aviso.ok {
+    background-color: aquamarine;
+    color: aqua;
+}
+
+.aviso.erro{
+    background-color: rgb(163, 61, 61);
+    color: rgb(204, 93, 116);
+}
+
+/* busca e botões */
+.busca{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+
+input[type=text]{
+    padding: 8px 10px;
+    border: 1px solid var(--borda);
+    border-radius: 6px;
+    font: inherit;
+    width: 100%;
+    max-width: 320px;
+}
+
+button{
+    font: inherit;
+    font-weight: 600;
+    padding: 8px 16px;
+    border: 0;
+    border-radius: 6px;
+    background-color: var(--principal);
+    color: cyan;
+    cursor: pointer;
+}
+
+button.perigo{
+    background-color: #da7373;
+    padding: 4px 10px;
+}
+
+/* Tabela */
+.rolagem {
+    overflow-x: auto;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #98dffd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td{
+    padding: 10px 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--borda);
+    white-space: nowrap;
+}
+
+th{
+    background-color: #d9fffa;
+}
+
+.acoes{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.acoes form{
+    margin: 0;
+}
+
+/* Selos de situção */
