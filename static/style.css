@@ -1,0 +1,223 @@
+/* Variáveis de cor: muda aqui e o site inteiro muda */
+:root{
+    --principal: #7df3ed;
+    --fundo: #bcf1f3; 
+    --texto: #001330;
+    --borda: #41adb4;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--fundo);
+    color: var(--texto);
+}
+
+/* Cabelhaço e menu */
+header{
+   background-color: var(--principal);
+   color: #ffff;
+   padding: 14px 24px;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   gap: 12px 32px;
+}
+
+header h1{
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+nav a{
+    color: #eeadad;
+    margin-right: 16px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+/* Área principal */
+main{
+    max-width: 960px;
+    margin: 24px auto;
+    padding: 0 16px;
+}
+
+h2{
+    margin-top: 0;
+}
+
+a{
+    color: var(--principal);
+}
+
+/* Mensagens */
+.aviso{
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.aviso.ok{
+    background-color: #98e7d4;
+    color: #3fcaca;
+}
+
+.aviso.erro{
+    background-color: #87e7c7;
+    color: #2ed8a5a2;
+}
+
+/* Busca e botoões */
+.busca{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+
+input[type=text]{
+    padding: 8px 10px;
+    border: 1px solid var(--borda);
+    border-radius: 6px;
+    font: inherit;
+    width: 100%;
+    max-width: 320px;
+}
+
+button{
+    font: inherit;
+    font-weight: 600;
+    padding: 8px 16px;
+    border: 0;
+    border-radius: 6px;
+    background-color: var(--principal);
+    color: #4ff8ce80;
+    cursor: pointer;
+}
+
+button.perigo{
+    background-color: #1eb3ceb2;
+    padding: 4px 10px;
+}
+
+/* Tabela */
+.rolagem{
+    overflow-x: auto;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #3aecc0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 10px 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--borda);
+    white-space: nowrap;
+}
+
+th{
+    background-color: #10cbec;
+}
+
+.acoes{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.acoes form{
+    margin: 0;
+}
+
+/* Selos de situação */
+
+.selo{
+    padding: 2px 10px;
+    border-radius: 999px;
+    font-size: .85rem;
+    font-weight: 600;
+}
+
+.selo.aprovado{
+    background-color: #28a0d8c5;
+    color: #52e2fcc5;
+}
+
+.selo.recuperacao{
+    background-color: #f02424ab;
+    color: rgba(247, 88, 14, 0.842);
+}
+
+.selo.reprovado{
+    background-color: rgba(218, 98, 62, 0.801);
+    color: rgba(236, 38, 78, 0.829);
+}
+
+/* Formulário */
+
+.formula{
+    display: grid;
+    gap: 14px;
+    max-width: 360px;
+}
+
+.formulario label{
+    display: grid;
+    gap: 4px;
+    font-weight: 600;
+}
+
+.formulario div{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+/* Cartões do relatório */
+
+.cartoes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.cartao{
+    background-color: #3aecc0;
+    padding: 14px;
+    border-radius: 8px;
+    border-top: 4px solid var(--principal);
+}
+
+.cartao span{
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.cartao.aprovado{
+    border-color: #3fcaca;
+}
+
+.cartao.recuperacao{
+    border-color: #7df3ed;
+}
+
+.cartao.reprovado{
+    border-color: #ee9393;
+}
